@@ -20,6 +20,7 @@ const requiresSecure = (req, res, next) => {
     return next();
 }
 
+// bypass if ran locally
 const bypassSecure = (req, res, next) => {
     next();
 }
